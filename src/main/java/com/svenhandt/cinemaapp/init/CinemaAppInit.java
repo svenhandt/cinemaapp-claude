@@ -8,6 +8,7 @@ import java.util.Arrays;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.stereotype.Component;
@@ -16,6 +17,7 @@ import com.svenhandt.cinemaapp.service.AuditoriumService;
 import com.svenhandt.cinemaapp.service.ScreeningService;
 
 @Component
+@Profile("!test")
 public class CinemaAppInit implements ApplicationRunner {
 
     private static final String AUDITORIUM_FILES_LOCATION = "classpath:cinemaapp/*.txt";

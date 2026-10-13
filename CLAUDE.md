@@ -463,6 +463,8 @@ Verify:
 
 Create @SpringBootTest integration tests.
 
+Integration tests live in the package `com.svenhandt.cinemaapp.integrationtests`.
+
 One happy-path integration test per endpoint is sufficient.
 
 Avoid mocking whenever possible.
