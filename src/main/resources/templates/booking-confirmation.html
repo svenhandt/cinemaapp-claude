@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Buchungsbestätigung</title>
+    <link rel="stylesheet" th:href="@{/css/booking-confirmation.css}"/>
+</head>
+<body>
+<a id="homepage-link" class="homepage-link" href="/" hidden>Zur Homepage</a>
+<header>
+    <h1>Kinokasse</h1>
+</header>
+
+<main>
+    <section class="booking-confirmation">
+        <h2>Buchung bestätigt</h2>
+        <p class="booking-number">Buchungsnummer: <strong th:text="${confirmation.bookingNumber}">BK-A1B2C3D4</strong></p>
+        <p class="movie-title" th:text="${confirmation.movieTitle}">Filmtitel</p>
+        <p class="screening-meta">
+            <span th:text="${#strings.capitalize(#strings.toLowerCase(confirmation.weekday))}">Mo</span>,
+            <span th:text="${confirmation.startTime}">17:00</span> Uhr &middot;
+            <span th:text="${confirmation.auditoriumName}">Saal 1</span>
+        </p>
+        <ul class="seat-list">
+            <li th:each="seat : ${confirmation.seats}">
+                Reihe <span th:text="${seat.rowNumber}">1</span>, Platz <span th:text="${seat.seatNumber}">1</span>
+            </li>
+        </ul>
+        <p class="price-per-seat">Preis pro Platz:
+            <span th:text="${#numbers.formatDecimal(confirmation.pricePerSeat, 1, 2, 'POINT')} + ' €'">7.50 €</span>
+        </p>
+        <p class="total">Gesamtsumme:
+            <strong th:text="${#numbers.formatDecimal(confirmation.total, 1, 2, 'POINT')} + ' €'">15.00 €</strong>
+        </p>
+        <p class="booking-date">Gebucht am:
+            <span th:text="${#temporals.format(confirmation.bookingDate, 'dd.MM.yyyy HH:mm')}">25.09.2026 14:00</span>
+        </p>
+
+        <button type="button" class="print-button" th:attr="data-booking-number=${confirmation.bookingNumber}"
+                onclick="printConfirmation(this)">Drucken</button>
+    </section>
+</main>
+<script>
+    function printConfirmation(button) {
+        var bookingNumber = button.getAttribute('data-booking-number');
+        window.open('/bookings/' + encodeURIComponent(bookingNumber) + '/pdf', '_blank');
+        document.getElementById('homepage-link').hidden = false;
+    }
+</script>
+</body>
+</html>

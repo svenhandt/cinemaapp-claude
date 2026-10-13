@@ -1,0 +1,14 @@
+package com.svenhandt.cinemaapp.domain.repositories;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.svenhandt.cinemaapp.domain.entities.Movie;
+
+@Repository
+public interface MovieRepository extends JpaRepository<Movie, Long> {
+
+    Optional<Movie> findByTitle(String title);
+}

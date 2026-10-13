@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Kinokasse</title>
+    <link rel="stylesheet" th:href="@{/css/screening-details.css}"/>
+</head>
+<body>
+<header>
+    <h1>Kinokasse</h1>
+</header>
+
+<main>
+    <p class="back-link"><a th:href="@{/}">&larr; Zur Übersicht</a></p>
+
+    <p class="error" th:if="${error}" th:text="${error}">Fehlermeldung</p>
+
+    <section class="screening-info">
+        <h2 th:text="${screening.movieTitle}">Filmtitel</h2>
+        <p class="screening-meta">
+            <span th:text="${#strings.capitalize(#strings.toLowerCase(screening.weekday))}">Mo</span>,
+            <span th:text="${screening.startTime}">17:00</span> Uhr &middot;
+            <span th:text="${screening.auditorium.name}">Saal 1</span> &middot;
+            <span th:text="${#numbers.formatDecimal(screening.price, 1, 2, 'POINT')} + ' €'">7.50 €</span>
+        </p>
+    </section>
+
+    <form th:action="@{/bookings/init}" method="post">
+        <input type="hidden" name="screeningId" th:value="${screening.id}"/>
+        <div class="auditorium" th:attr="data-price=${screening.price}">
+            <div class="screen">Leinwand</div>
+            <div class="seats">
+                <th:block th:each="seat : ${screening.auditorium.seats}">
+                    <div class="row-label" th:if="${seat.seatNumber == 1}" th:text="${seat.rowNumber}"
+                         th:style="|grid-row: ${seat.rowNumber}; grid-column: 1;|">1</div>
+                    <div class="seat" th:classappend="${seat.booked} ? 'booked'"
+                         th:style="|grid-row: ${seat.rowNumber}; grid-column: ${seat.columnPosition + 3};|">
+                        <input type="checkbox" class="seat-checkbox" name="seatIds"
+                               th:id="|seat-${seat.id}|" th:value="${seat.id}" th:disabled="${seat.booked}"/>
+                        <label th:for="|seat-${seat.id}|" th:text="${seat.seatNumber}">1</label>
+                    </div>
+                </th:block>
+            </div>
+        </div>
+
+        <div class="summary-bar">
+            <span>Gesamtsumme: <strong id="total">0.00 €</strong></span>
+            <button id="book-button" type="submit" disabled>Buchen</button>
+        </div>
+    </form>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var auditorium = document.querySelector('.auditorium');
+        var pricePerSeat = parseFloat(auditorium.dataset.price);
+        var checkboxes = document.querySelectorAll('.seat-checkbox');
+        var total = document.getElementById('total');
+        var bookButton = document.getElementById('book-button');
+
+        function update() {
+            var selected = document.querySelectorAll('.seat-checkbox:checked');
+            total.textContent = (selected.length * pricePerSeat).toFixed(2) + ' €';
+            bookButton.disabled = selected.length === 0;
+            checkboxes.forEach(function (checkbox) {
+                checkbox.closest('.seat').classList.toggle('selected', checkbox.checked);
+            });
+        }
+
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', update);
+        });
+
+        update();
+    });
+</script>
+</body>
+</html>

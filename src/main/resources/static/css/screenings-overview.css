@@ -1,0 +1,88 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #1a1a1a;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fafafa;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+main {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 3rem;
+}
+
+.no-screenings {
+    font-style: italic;
+}
+
+.movie {
+    display: grid;
+    grid-template-columns: 14rem 1fr;
+    align-items: start;
+    gap: 2rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-title {
+    margin: 0.3rem 0 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.screening-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 0.5rem 0.9rem;
+}
+
+.weekday-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0 0.75rem;
+    min-width: 2.5rem;
+}
+
+.weekday-column + .weekday-column {
+    border-left: 1px solid #eee;
+}
+
+.weekday {
+    font-weight: bold;
+}
+
+.times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.times a {
+    color: #1a1a1a;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.times a:hover {
+    color: #000;
+}

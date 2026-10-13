@@ -1,0 +1,19 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - heading "Kinokasse" [level=1] [ref=f4e3]
+  - main [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - heading "Buchung bestätigt" [level=2] [ref=f4e6]
+      - paragraph [ref=f4e7]:
+        - text: "Buchungsnummer:"
+        - strong [ref=f4e8]: BK-F10E8BF2
+      - paragraph [ref=f4e9]: Der Name der Rose
+      - paragraph [ref=f4e10]: Mo, 20:00 Uhr · Saal 1
+      - list [ref=f4e11]:
+        - listitem [ref=f4e12]: Reihe 1, Platz 1
+      - paragraph [ref=f4e13]: "Preis pro Platz: 8.00 €"
+      - paragraph [ref=f4e14]:
+        - text: "Gesamtsumme:"
+        - strong [ref=f4e15]: 8.00 €
+      - paragraph [ref=f4e16]: "Gebucht am: 28.09.2026 08:24"
+      - button "Drucken" [ref=f4e17] [cursor=pointer]

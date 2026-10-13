@@ -1,0 +1,233 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - heading "Kinokasse" [level=1] [ref=e3]
+  - main [ref=e4]:
+    - paragraph [ref=e5]:
+      - link "← Zur Übersicht" [ref=e6] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e7]:
+      - heading "Der Name der Rose" [level=2] [ref=e8]
+      - paragraph [ref=e9]: Mo, 17:00 Uhr · Saal 1 · 7.00 €
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]: Leinwand
+        - generic [ref=e13]:
+          - generic [ref=e14]: "1"
+          - generic [ref=e15]:
+            - checkbox "1" [checked] [active] [ref=e16]
+            - generic [ref=e17] [cursor=pointer]: "1"
+          - generic [ref=e18]:
+            - checkbox "2" [ref=e19]
+            - generic [ref=e20] [cursor=pointer]: "2"
+          - generic [ref=e21]:
+            - checkbox "3" [ref=e22]
+            - generic [ref=e23] [cursor=pointer]: "3"
+          - generic [ref=e24]:
+            - checkbox "4" [ref=e25]
+            - generic [ref=e26] [cursor=pointer]: "4"
+          - generic [ref=e27]:
+            - checkbox "5" [ref=e28]
+            - generic [ref=e29] [cursor=pointer]: "5"
+          - generic [ref=e30]:
+            - checkbox "6" [ref=e31]
+            - generic [ref=e32] [cursor=pointer]: "6"
+          - generic [ref=e33]:
+            - checkbox "7" [ref=e34]
+            - generic [ref=e35] [cursor=pointer]: "7"
+          - generic [ref=e36]:
+            - checkbox "8" [ref=e37]
+            - generic [ref=e38] [cursor=pointer]: "8"
+          - generic [ref=e39]:
+            - checkbox "9" [ref=e40]
+            - generic [ref=e41] [cursor=pointer]: "9"
+          - generic [ref=e42]:
+            - checkbox "10" [ref=e43]
+            - generic [ref=e44] [cursor=pointer]: "10"
+          - generic [ref=e45]:
+            - checkbox "11" [ref=e46]
+            - generic [ref=e47] [cursor=pointer]: "11"
+          - generic [ref=e48]:
+            - checkbox "12" [ref=e49]
+            - generic [ref=e50] [cursor=pointer]: "12"
+          - generic [ref=e51]:
+            - checkbox "13" [ref=e52]
+            - generic [ref=e53] [cursor=pointer]: "13"
+          - generic [ref=e54]: "2"
+          - generic [ref=e55]:
+            - checkbox "1" [ref=e56]
+            - generic [ref=e57] [cursor=pointer]: "1"
+          - generic [ref=e58]:
+            - checkbox "2" [ref=e59]
+            - generic [ref=e60] [cursor=pointer]: "2"
+          - generic [ref=e61]:
+            - checkbox "3" [ref=e62]
+            - generic [ref=e63] [cursor=pointer]: "3"
+          - generic [ref=e64]:
+            - checkbox "4" [ref=e65]
+            - generic [ref=e66] [cursor=pointer]: "4"
+          - generic [ref=e67]:
+            - checkbox "5" [ref=e68]
+            - generic [ref=e69] [cursor=pointer]: "5"
+          - generic [ref=e70]:
+            - checkbox "6" [ref=e71]
+            - generic [ref=e72] [cursor=pointer]: "6"
+          - generic [ref=e73]:
+            - checkbox "7" [ref=e74]
+            - generic [ref=e75] [cursor=pointer]: "7"
+          - generic [ref=e76]:
+            - checkbox "8" [ref=e77]
+            - generic [ref=e78] [cursor=pointer]: "8"
+          - generic [ref=e79]:
+            - checkbox "9" [ref=e80]
+            - generic [ref=e81] [cursor=pointer]: "9"
+          - generic [ref=e82]:
+            - checkbox "10" [ref=e83]
+            - generic [ref=e84] [cursor=pointer]: "10"
+          - generic [ref=e85]:
+            - checkbox "11" [ref=e86]
+            - generic [ref=e87] [cursor=pointer]: "11"
+          - generic [ref=e88]:
+            - checkbox "12" [ref=e89]
+            - generic [ref=e90] [cursor=pointer]: "12"
+          - generic [ref=e91]:
+            - checkbox "13" [ref=e92]
+            - generic [ref=e93] [cursor=pointer]: "13"
+          - generic [ref=e94]:
+            - checkbox "14" [ref=e95]
+            - generic [ref=e96] [cursor=pointer]: "14"
+          - generic [ref=e97]:
+            - checkbox "15" [ref=e98]
+            - generic [ref=e99] [cursor=pointer]: "15"
+          - generic [ref=e100]:
+            - checkbox "16" [ref=e101]
+            - generic [ref=e102] [cursor=pointer]: "16"
+          - generic [ref=e103]:
+            - checkbox "17" [ref=e104]
+            - generic [ref=e105] [cursor=pointer]: "17"
+          - generic [ref=e106]: "3"
+          - generic [ref=e107]:
+            - checkbox "1" [ref=e108]
+            - generic [ref=e109] [cursor=pointer]: "1"
+          - generic [ref=e110]:
+            - checkbox "2" [ref=e111]
+            - generic [ref=e112] [cursor=pointer]: "2"
+          - generic [ref=e113]:
+            - checkbox "3" [ref=e114]
+            - generic [ref=e115] [cursor=pointer]: "3"
+          - generic [ref=e116]:
+            - checkbox "4" [ref=e117]
+            - generic [ref=e118] [cursor=pointer]: "4"
+          - generic [ref=e119]:
+            - checkbox "5" [ref=e120]
+            - generic [ref=e121] [cursor=pointer]: "5"
+          - generic [ref=e122]:
+            - checkbox "6" [ref=e123]
+            - generic [ref=e124] [cursor=pointer]: "6"
+          - generic [ref=e125]:
+            - checkbox "7" [ref=e126]
+            - generic [ref=e127] [cursor=pointer]: "7"
+          - generic [ref=e128]:
+            - checkbox "8" [ref=e129]
+            - generic [ref=e130] [cursor=pointer]: "8"
+          - generic [ref=e131]:
+            - checkbox "9" [ref=e132]
+            - generic [ref=e133] [cursor=pointer]: "9"
+          - generic [ref=e134]:
+            - checkbox "10" [ref=e135]
+            - generic [ref=e136] [cursor=pointer]: "10"
+          - generic [ref=e137]:
+            - checkbox "11" [ref=e138]
+            - generic [ref=e139] [cursor=pointer]: "11"
+          - generic [ref=e140]:
+            - checkbox "12" [ref=e141]
+            - generic [ref=e142] [cursor=pointer]: "12"
+          - generic [ref=e143]:
+            - checkbox "13" [ref=e144]
+            - generic [ref=e145] [cursor=pointer]: "13"
+          - generic [ref=e146]:
+            - checkbox "14" [ref=e147]
+            - generic [ref=e148] [cursor=pointer]: "14"
+          - generic [ref=e149]:
+            - checkbox "15" [ref=e150]
+            - generic [ref=e151] [cursor=pointer]: "15"
+          - generic [ref=e152]:
+            - checkbox "16" [ref=e153]
+            - generic [ref=e154] [cursor=pointer]: "16"
+          - generic [ref=e155]:
+            - checkbox "17" [ref=e156]
+            - generic [ref=e157] [cursor=pointer]: "17"
+          - generic [ref=e158]:
+            - checkbox "18" [ref=e159]
+            - generic [ref=e160] [cursor=pointer]: "18"
+          - generic [ref=e161]:
+            - checkbox "19" [ref=e162]
+            - generic [ref=e163] [cursor=pointer]: "19"
+          - generic [ref=e164]: "4"
+          - generic [ref=e165]:
+            - checkbox "1" [ref=e166]
+            - generic [ref=e167] [cursor=pointer]: "1"
+          - generic [ref=e168]:
+            - checkbox "2" [ref=e169]
+            - generic [ref=e170] [cursor=pointer]: "2"
+          - generic [ref=e171]:
+            - checkbox "3" [ref=e172]
+            - generic [ref=e173] [cursor=pointer]: "3"
+          - generic [ref=e174]:
+            - checkbox "4" [ref=e175]
+            - generic [ref=e176] [cursor=pointer]: "4"
+          - generic [ref=e177]:
+            - checkbox "5" [ref=e178]
+            - generic [ref=e179] [cursor=pointer]: "5"
+          - generic [ref=e180]:
+            - checkbox "6" [ref=e181]
+            - generic [ref=e182] [cursor=pointer]: "6"
+          - generic [ref=e183]:
+            - checkbox "7" [ref=e184]
+            - generic [ref=e185] [cursor=pointer]: "7"
+          - generic [ref=e186]:
+            - checkbox "8" [ref=e187]
+            - generic [ref=e188] [cursor=pointer]: "8"
+          - generic [ref=e189]:
+            - checkbox "9" [ref=e190]
+            - generic [ref=e191] [cursor=pointer]: "9"
+          - generic [ref=e192]:
+            - checkbox "10" [ref=e193]
+            - generic [ref=e194] [cursor=pointer]: "10"
+          - generic [ref=e195]:
+            - checkbox "11" [ref=e196]
+            - generic [ref=e197] [cursor=pointer]: "11"
+          - generic [ref=e198]:
+            - checkbox "12" [ref=e199]
+            - generic [ref=e200] [cursor=pointer]: "12"
+          - generic [ref=e201]:
+            - checkbox "13" [ref=e202]
+            - generic [ref=e203] [cursor=pointer]: "13"
+          - generic [ref=e204]:
+            - checkbox "14" [ref=e205]
+            - generic [ref=e206] [cursor=pointer]: "14"
+          - generic [ref=e207]:
+            - checkbox "15" [ref=e208]
+            - generic [ref=e209] [cursor=pointer]: "15"
+          - generic [ref=e210]:
+            - checkbox "16" [ref=e211]
+            - generic [ref=e212] [cursor=pointer]: "16"
+          - generic [ref=e213]:
+            - checkbox "17" [ref=e214]
+            - generic [ref=e215] [cursor=pointer]: "17"
+          - generic [ref=e216]:
+            - checkbox "18" [ref=e217]
+            - generic [ref=e218] [cursor=pointer]: "18"
+          - generic [ref=e219]:
+            - checkbox "19" [ref=e220]
+            - generic [ref=e221] [cursor=pointer]: "19"
+          - generic [ref=e222]:
+            - checkbox "20" [ref=e223]
+            - generic [ref=e224] [cursor=pointer]: "20"
+          - generic [ref=e225]:
+            - checkbox "21" [ref=e226]
+            - generic [ref=e227] [cursor=pointer]: "21"
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - text: "Gesamtsumme:"
+          - strong [ref=e230]: 7.00 €
+        - button "Buchen" [ref=e231] [cursor=pointer]

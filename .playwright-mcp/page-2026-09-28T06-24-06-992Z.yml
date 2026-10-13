@@ -1,0 +1,60 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - heading "Kinokasse" [level=1] [ref=f3e3]
+  - main [ref=f3e4]:
+    - paragraph [ref=f3e5]:
+      - link "← Zur Sitzplatzwahl" [ref=f3e6] [cursor=pointer]:
+        - /url: /screenings/2
+    - generic [ref=f3e7]:
+      - heading "Der Name der Rose" [level=2] [ref=f3e8]
+      - paragraph [ref=f3e9]: Mo, 20:00 Uhr · Saal 1
+      - list [ref=f3e10]:
+        - listitem [ref=f3e11]: Reihe 1, Platz 1
+      - paragraph [ref=f3e12]:
+        - text: "Gesamtsumme:"
+        - strong [ref=f3e13]: 8.00 €
+    - generic [ref=f3e14]:
+      - generic [ref=f3e15]:
+        - generic [ref=f3e16]: Karteninhaber
+        - textbox "Karteninhaber" [ref=f3e17]
+      - generic [ref=f3e18]:
+        - generic [ref=f3e19]: Kartennummer
+        - textbox "Kartennummer" [ref=f3e20]
+      - generic [ref=f3e21]:
+        - generic [ref=f3e22]:
+          - generic [ref=f3e23]: Gültig bis
+          - generic [ref=f3e24]:
+            - combobox "Gültigkeitsmonat" [ref=f3e25]:
+              - option "01"
+              - option "02"
+              - option "03"
+              - option "04"
+              - option "05"
+              - option "06"
+              - option "07"
+              - option "08"
+              - option "09" [selected]
+              - option "10"
+              - option "11"
+              - option "12"
+            - combobox "Gültigkeitsjahr" [ref=f3e26]:
+              - option "2026" [selected]
+              - option "2027"
+              - option "2028"
+              - option "2029"
+              - option "2030"
+              - option "2031"
+              - option "2032"
+              - option "2033"
+              - option "2034"
+              - option "2035"
+              - option "2036"
+              - option "2037"
+              - option "2038"
+              - option "2039"
+              - option "2040"
+              - option "2041"
+        - generic [ref=f3e27]:
+          - generic [ref=f3e28]: Prüfziffer
+          - textbox "Prüfziffer" [ref=f3e29]
+      - button "Jetzt buchen" [ref=f3e30] [cursor=pointer]

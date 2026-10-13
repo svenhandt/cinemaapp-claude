@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Kinokasse</title>
+    <link rel="stylesheet" th:href="@{/css/screenings-overview.css}"/>
+</head>
+<body>
+<header>
+    <h1>Kinokasse</h1>
+</header>
+
+<main>
+    <p class="no-screenings" th:if="${#lists.isEmpty(movieScreenings)}">
+        Es sind keine Vorstellungen verfügbar.
+    </p>
+
+    <section class="movie" th:each="movie : ${movieScreenings}">
+        <h2 class="movie-title" th:text="${movie.movieTitle}">Filmtitel</h2>
+        <div class="screening-panel">
+            <div class="weekday-column" th:each="weekdayGroup : ${movie.weekdaySchedule}">
+                <span class="weekday" th:text="${#strings.capitalize(#strings.toLowerCase(weekdayGroup.weekday))}">Mo</span>
+                <div class="times">
+                    <a th:each="screening : ${weekdayGroup.screenings}"
+                       th:href="@{/screenings/{id}(id=${screening.id})}"
+                       th:text="${screening.startTime}">17:00</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

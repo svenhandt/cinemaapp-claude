@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Kinokasse</title>
+    <link rel="stylesheet" th:href="@{/css/booking-form.css}"/>
+</head>
+<body>
+<header>
+    <h1>Kinokasse</h1>
+</header>
+
+<main>
+    <p class="back-link"><a th:href="@{/screenings/{id}(id=${booking.screeningId})}">&larr; Zur Sitzplatzwahl</a></p>
+
+    <section class="booking-summary">
+        <h2 th:text="${booking.movieTitle}">Filmtitel</h2>
+        <p class="screening-meta">
+            <span th:text="${#strings.capitalize(#strings.toLowerCase(booking.weekday))}">Mo</span>,
+            <span th:text="${booking.startTime}">17:00</span> Uhr &middot;
+            <span th:text="${booking.auditoriumName}">Saal 1</span>
+        </p>
+        <ul class="seat-list">
+            <li th:each="seat : ${booking.seats}">
+                Reihe <span th:text="${seat.rowNumber}">1</span>, Platz <span th:text="${seat.seatNumber}">1</span>
+            </li>
+        </ul>
+        <p class="total">Gesamtsumme:
+            <strong th:text="${#numbers.formatDecimal(booking.total, 1, 2, 'POINT')} + ' €'">15.00 €</strong>
+        </p>
+    </section>
+
+    <form class="payment-form" th:action="@{/bookings}" th:object="${payment}" method="post">
+        <input type="hidden" name="screeningId" th:value="${booking.screeningId}"/>
+        <input type="hidden" name="seatIds" th:each="seat : ${booking.seats}" th:value="${seat.id}"/>
+
+        <div class="form-row">
+            <label for="cardholderName">Karteninhaber</label>
+            <input type="text" id="cardholderName" th:field="*{cardholderName}"/>
+            <span class="field-error" th:if="${#fields.hasErrors('cardholderName')}" th:errors="*{cardholderName}">Fehler</span>
+        </div>
+
+        <div class="form-row">
+            <label for="cardNumber">Kartennummer</label>
+            <input type="text" id="cardNumber" th:field="*{cardNumber}"/>
+            <span class="field-error" th:if="${#fields.hasErrors('cardNumber')}" th:errors="*{cardNumber}">Fehler</span>
+            <span class="field-error" th:if="${cardNumberError != null}" th:text="${cardNumberError}">Fehler</span>
+        </div>
+
+        <div class="form-row form-row--split">
+            <div class="form-field">
+                <label>Gültig bis</label>
+                <div class="expiry-inputs">
+                    <select th:field="*{expiryMonth}" aria-label="Gültigkeitsmonat">
+                        <option th:each="month : ${#numbers.sequence(1, 12)}" th:value="${month}"
+                                th:text="${#numbers.formatInteger(month, 2)}">01
+                        </option>
+                    </select>
+                    <select th:field="*{expiryYear}" aria-label="Gültigkeitsjahr">
+                        <option th:each="year : ${#numbers.sequence(booking.currentYear, booking.currentYear + 15)}"
+                                th:value="${year}" th:text="${year}">2026
+                        </option>
+                    </select>
+                </div>
+                <span class="field-error" th:if="${#fields.hasErrors('expiryMonth')}" th:errors="*{expiryMonth}">Fehler</span>
+                <span class="field-error" th:if="${#fields.hasErrors('expiryYear')}" th:errors="*{expiryYear}">Fehler</span>
+            </div>
+            <div class="form-field">
+                <label for="securityCode">Prüfziffer</label>
+                <input type="text" id="securityCode" name="securityCode" value=""/>
+                <span class="field-error" th:if="${#fields.hasErrors('securityCode')}" th:errors="*{securityCode}">Fehler</span>
+            </div>
+        </div>
+
+        <button type="submit">Jetzt buchen</button>
+    </form>
+</main>
+</body>
+</html>

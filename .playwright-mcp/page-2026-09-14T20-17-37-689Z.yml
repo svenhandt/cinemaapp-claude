@@ -1,0 +1,135 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - heading "Kinokasse" [level=1] [ref=f1e3]
+  - main [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - heading "Der Name der Rose" [level=2] [ref=f1e6]
+      - generic [ref=f1e7]:
+        - generic [ref=f1e8]:
+          - generic [ref=f1e9]: Mo
+          - generic [ref=f1e10]:
+            - link "17:00" [ref=f1e11] [cursor=pointer]:
+              - /url: /screenings/1
+            - link "20:00" [ref=f1e12] [cursor=pointer]:
+              - /url: /screenings/2
+        - generic [ref=f1e13]:
+          - generic [ref=f1e14]: Di
+          - link "17:00" [ref=f1e16] [cursor=pointer]:
+            - /url: /screenings/3
+        - generic [ref=f1e17]:
+          - generic [ref=f1e18]: Mi
+          - generic [ref=f1e19]:
+            - link "16:00" [ref=f1e20] [cursor=pointer]:
+              - /url: /screenings/4
+            - link "19:00" [ref=f1e21] [cursor=pointer]:
+              - /url: /screenings/5
+            - link "22:00" [ref=f1e22] [cursor=pointer]:
+              - /url: /screenings/6
+        - generic [ref=f1e23]:
+          - generic [ref=f1e24]: Do
+          - generic [ref=f1e25]:
+            - link "16:00" [ref=f1e26] [cursor=pointer]:
+              - /url: /screenings/7
+            - link "19:00" [ref=f1e27] [cursor=pointer]:
+              - /url: /screenings/8
+        - generic [ref=f1e28]:
+          - generic [ref=f1e29]: Fr
+          - generic [ref=f1e30]:
+            - link "17:00" [ref=f1e31] [cursor=pointer]:
+              - /url: /screenings/9
+            - link "20:00" [ref=f1e32] [cursor=pointer]:
+              - /url: /screenings/10
+            - link "23:00" [ref=f1e33] [cursor=pointer]:
+              - /url: /screenings/11
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]: Sa
+          - generic [ref=f1e36]:
+            - link "17:00" [ref=f1e37] [cursor=pointer]:
+              - /url: /screenings/12
+            - link "20:00" [ref=f1e38] [cursor=pointer]:
+              - /url: /screenings/13
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: So
+          - link "15:00" [ref=f1e42] [cursor=pointer]:
+            - /url: /screenings/14
+    - generic [ref=f1e43]:
+      - heading "Der Schuh des Königs" [level=2] [ref=f1e44]
+      - generic [ref=f1e45]:
+        - generic [ref=f1e46]:
+          - generic [ref=f1e47]: Mo
+          - generic [ref=f1e48]:
+            - link "19:15" [ref=f1e49] [cursor=pointer]:
+              - /url: /screenings/22
+            - link "21:00" [ref=f1e50] [cursor=pointer]:
+              - /url: /screenings/23
+        - generic [ref=f1e51]:
+          - generic [ref=f1e52]: Di
+          - generic [ref=f1e53]:
+            - link "19:15" [ref=f1e54] [cursor=pointer]:
+              - /url: /screenings/24
+            - link "21:00" [ref=f1e55] [cursor=pointer]:
+              - /url: /screenings/25
+        - generic [ref=f1e56]:
+          - generic [ref=f1e57]: Mi
+          - generic [ref=f1e58]:
+            - link "16:00" [ref=f1e59] [cursor=pointer]:
+              - /url: /screenings/26
+            - link "19:00" [ref=f1e60] [cursor=pointer]:
+              - /url: /screenings/27
+            - link "22:00" [ref=f1e61] [cursor=pointer]:
+              - /url: /screenings/28
+        - generic [ref=f1e62]:
+          - generic [ref=f1e63]: Do
+          - link "17:00" [ref=f1e65] [cursor=pointer]:
+            - /url: /screenings/29
+        - generic [ref=f1e66]:
+          - generic [ref=f1e67]: Fr
+          - generic [ref=f1e68]:
+            - link "17:20" [ref=f1e69] [cursor=pointer]:
+              - /url: /screenings/30
+            - link "20:20" [ref=f1e70] [cursor=pointer]:
+              - /url: /screenings/31
+            - link "23:20" [ref=f1e71] [cursor=pointer]:
+              - /url: /screenings/32
+        - generic [ref=f1e72]:
+          - generic [ref=f1e73]: Sa
+          - generic [ref=f1e74]:
+            - link "17:00" [ref=f1e75] [cursor=pointer]:
+              - /url: /screenings/33
+            - link "20:00" [ref=f1e76] [cursor=pointer]:
+              - /url: /screenings/34
+        - generic [ref=f1e77]:
+          - generic [ref=f1e78]: So
+          - link "15:00" [ref=f1e80] [cursor=pointer]:
+            - /url: /screenings/35
+    - generic [ref=f1e81]:
+      - heading "Haare am Rücken" [level=2] [ref=f1e82]
+      - generic [ref=f1e83]:
+        - generic [ref=f1e84]:
+          - generic [ref=f1e85]: Mo
+          - link "17:00" [ref=f1e87] [cursor=pointer]:
+            - /url: /screenings/15
+        - generic [ref=f1e88]:
+          - generic [ref=f1e89]: Di
+          - link "17:00" [ref=f1e91] [cursor=pointer]:
+            - /url: /screenings/16
+        - generic [ref=f1e92]:
+          - generic [ref=f1e93]: Mi
+          - link "14:00" [ref=f1e95] [cursor=pointer]:
+            - /url: /screenings/17
+        - generic [ref=f1e96]:
+          - generic [ref=f1e97]: Do
+          - link "14:00" [ref=f1e99] [cursor=pointer]:
+            - /url: /screenings/18
+        - generic [ref=f1e100]:
+          - generic [ref=f1e101]: Fr
+          - link "17:00" [ref=f1e103] [cursor=pointer]:
+            - /url: /screenings/19
+        - generic [ref=f1e104]:
+          - generic [ref=f1e105]: Sa
+          - link "14:00" [ref=f1e107] [cursor=pointer]:
+            - /url: /screenings/20
+        - generic [ref=f1e108]:
+          - generic [ref=f1e109]: So
+          - link "15:00" [ref=f1e111] [cursor=pointer]:
+            - /url: /screenings/21
